@@ -1,5 +1,6 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
+import 'package:mersal/constants/assets.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -289,13 +290,13 @@ class _HomePageState extends State<HomePage> {
         onPressed: onPressed,
         icon: Icon(icon, size: 18),
         label: Text(label, style: TextStyle(fontSize: 11.sp)),
-        style: ElevatedButton.styleFrom(
-          backgroundColor: color,
-          padding: EdgeInsets.symmetric(vertical: 12),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(15),
-          ),
-        ),
+        // style: ElevatedButton.styleFrom(
+        //   // backgroundColor: color,
+        //   padding: EdgeInsets.symmetric(vertical: 12),
+        //   shape: RoundedRectangleBorder(
+        //     borderRadius: BorderRadius.circular(15),
+        //   ),
+        // ),
       ),
     );
   }
@@ -319,7 +320,7 @@ class DrawerWidget extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
-            child: Image.asset('assets/logo.png', height: 200),
+            child: Image.asset(Assets.assetsLogo, height: 200),
           ),
           Divider(),
           ListTile(

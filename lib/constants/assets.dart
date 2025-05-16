@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_single_quotes
 class Assets {
   Assets._();
-  
+
   /// Assets for assetsConvertVideo
   /// assets/convertVideo.png
   static const String assetsConvertVideo = "assets/convertVideo.png";
@@ -20,7 +20,7 @@ class Assets {
 
   /// Assets for assetsLogo
   /// assets/logo.png
-  static const String assetsLogo = "assets/logo.png";
+  static const String assetsLogo = "assets/app_icon.png";
 
   /// Assets for assetsModelUnquant
   /// assets/modelUnquant.tflite
@@ -46,4 +46,3 @@ class Assets {
   /// assets/uploadVidoe.png
   static const String assetsUploadVidoe = "assets/uploadVidoe.png";
 }
-
