@@ -22,6 +22,7 @@ List<CameraDescription>? cameras;
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   cameras = await availableCameras();
+
   runApp(const MyAppInitializer());
 }
 
@@ -45,7 +46,7 @@ class _MyAppInitializerState extends State<MyAppInitializer> {
   Future<void> _loadLocale() async {
     final savedLocale = await LanguageManager.getSavedLocale();
     setState(() {
-      _locale = savedLocale ?? const Locale('en');
+      _locale = savedLocale ?? const Locale('ar');
       _isLoading = false;
     });
   }
